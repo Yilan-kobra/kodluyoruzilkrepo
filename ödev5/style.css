@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1,.ust p{
+    text-align: center;
+}
+.ust{
+    width: 100%;
+}
+.an{
+    width: 131px;
+    padding-left: 10px;
+    margin: auto;
+}
+.ust .a{
+
+    display: inline;
+}
+input{
+    display: block;
+    margin: auto;
+}
+.so,.ort,.sa{
+    width: 33%;
+    float: left;
+    background-color: rgb(134, 120, 120);
+    text-align: center;
+    height: 150px;
+}
+a{
+    display: block;
+}
