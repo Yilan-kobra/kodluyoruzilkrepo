@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.kap{
+    width: 70%;
+    border: 1px solid red;
+    background-color: rgb(124, 78, 78);
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    background: rgb(70, 94, 119);
+    transition: 0.5s;   
+    color: rgb(4, 45, 68);
+    border: 1px solid rgb(194, 201, 207);
+}
+ul li a:hover{
+    background-color: darkturquoise;
+}
+.temiz{
+    clear: both;
+}
