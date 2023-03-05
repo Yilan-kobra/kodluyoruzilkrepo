@@ -1,0 +1,388 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: cornsilk;
+}
+.kap{
+    width: 100%;
+}
+.menu{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(15, 43, 43);
+    position:sticky;
+    top: 0;
+    z-index: 1; 
+}
+.menu .mensa{
+    height: 100%;
+    width: 25%;
+    float: left;
+    background-color: rgb(41, 80, 80);
+    animation:mensag 2s;
+}
+.menu .menort{
+    float: left;
+    width: 10%;
+    height: 100%;
+    background:linear-gradient(90deg,rgb(41, 80, 80),rgb(15, 43, 43));
+}
+.menu .menso{
+    height: 100%;
+    width: 65%;
+    float:left;
+    background-color: rgb(15, 43, 43);
+    animation:mensol 2s;
+}
+.menu ul{
+    margin-top: 25px;
+}
+.menu li{
+    list-style-type: none;
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+    animation:say 2s;
+}
+.menu h1{
+    font-size: 40px;
+    text-align: center;
+    animation:say 2s;
+    margin-top: 15px;
+    color: rgb(1, 26, 26);
+}
+@keyframes say{
+    0%{opacity: 0.1;}
+    50%{opacity: 0.6;}
+    100%{opacity: 1;}
+}
+@keyframes mensag{
+    0%{width: 50%;}
+    100%{width: 25%;}
+}
+@keyframes mensol{
+    0%{width: 40%;}
+    100%{ width: 65%;}
+}
+.resim{
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+}
+.resim img{
+    filter:grayscale(40%) ;
+}
+.bilgi{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(70, 107, 107);
+}
+.altmen{
+    margin-top: -22px;
+    height: 10%;
+    width: 100%;
+    background-color:rgba(13, 26, 26, 0.521) ;
+    box-shadow: 0px 6px 14px 0px black;
+    z-index: 1;
+    text-align: center;
+}
+.altmensa{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.altmenso{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.haber{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}
+.hkutu{
+    float: left;
+    margin-top: 3%;
+    height: 40%;
+    width: 45%;
+    margin-left: 5%;
+    background-color: rgb(17, 36, 36);
+    border-radius: 20px;
+}
+.hkutus .so{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.hkutu .so{
+    width: 50%;
+    height: 100%;
+    float: right;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.hkutus .sa{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hkutu .sa{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.hkutus .sa h3,.hkutu .sa h3{
+    text-align: center;
+    color: azure;
+}
+.hkutus .sa p,.hkutu .sa p{
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+    color: azure;
+}
+.hkutus .so img{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.hkutu .so img{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hkutus{
+    float: left;
+    margin-top: 3%;
+    height: 40%;
+    margin-right: 5%;
+    width: 45%;
+    background-color: rgb(17, 36, 36);
+    border-radius: 20px;
+}
+.alt{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(39, 46, 40);
+}
+.alt .altsa
+{
+    text-align: center;
+    float: left;
+    height: 100%;
+    width: 40%;
+}
+.alt .altort
+{
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+.alt .altsol
+{
+    text-align: center;
+    float: left;
+    height: 100%;
+    width: 40%;
+}
+.altsa .s,.altsa .ss,.altsol .ss,.altsol .s{
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+.altsa .y,.altsol .y{
+    height: 50%;
+    margin-top: -20px;
+    padding-top: 20px;
+}
+.altort .img{
+    width: 50%;
+    height: 70%;
+    margin: auto;
+}
+.altort .y{
+    margin-top: -15px;
+    text-align: center;
+}
+.alt a:hover{
+    text-decoration:underline;
+}
+@media screen and (max-width: 1000px){
+    .altsa .s,.altsa .ss,.altsol .ss,.altsol .s{
+        height: 20%;
+        margin: auto;
+        float: none;
+        width: 100%;
+    }
+    .altsa .y,.altsol .y{
+        height: 40%;
+        margin-top: -20px;
+        padding-top: 20px;
+    }
+    .altort .y{
+        font-size:13px;
+    }
+    .menu .mensa,.menu h1, .menu li,.menu .menso{
+        animation:none;
+    }
+    .menu .menso{
+        width: 50%;
+    }
+    .menu .mensa {
+        width: 35%;
+    }
+    .altort .img {
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 750px){
+.menu .mensa{
+    float: none;
+    width: 100%;
+    height: 60%;
+}
+.menu .menort{
+    width: 0;
+    height: 0;
+}
+.menu .menso{
+    width: 100%;
+    height: 40%;
+    float: none;
+    margin-top: -24px;
+}
+.menso .d{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+.menu li {
+    margin-left:3%;
+    margin-right: 3%;
+    text-align: center;
+}
+.menu{
+    height: 100px;
+    margin-top: -24px;
+}
+.menu ul {
+    margin-top: 0;
+    margin-left: -39px;
+}
+}
+@media screen and (max-width: 665px){
+    .menu li {
+        margin-left:2%;
+        margin-right: 2%;
+    }
+    }
+ @media screen and (max-width: 600px){
+        .menu li {
+            margin-left:4%;
+            margin-right: 4%;
+        }
+        .menso .d{
+            width: 70%;
+        }
+        }
+        @media screen and (max-width: 532px){
+            .menu li {
+                margin-left:3%;
+                margin-right: 3%;
+            }
+            .menso .d{
+                width: 80%;
+            }
+            .hkutus {
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+                height: 17%;
+                width: 80%;
+            }
+            .hkutu {
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+                height: 17%;
+                width: 80%;
+            }
+            .altmen {
+                height: 4%;
+                width: 100%;
+            }
+            .bilgi {
+                height: 2000px;
+            }
+            .altmensa{
+                width: 100%;
+                height: 100%;
+            }
+            .altmenso{
+                visibility: hidden;
+            }
+            .alt{
+                height: 400px;
+            }
+            .alt .altsa
+            {
+                float: none;
+                height: 35%;
+                width: 100%;
+            }
+            .alt .altort
+            {
+                float: none;
+                height: 30%;
+                width: 100%;
+            }
+            .alt .altsol
+            {
+                float: none;
+                height: 35%;
+                width: 100%;
+            }
+            .altsa .s,.altsa .ss,.altsol .ss,.altsol .s{
+                height: 35%;
+                width: 50%;
+                float: left;
+            }
+            .altsa .y,.altsol .y{
+                height: 50%;
+                margin-top: 0px;
+            }
+            .altort .img{
+                width: 40%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .altort img{
+                margin-top: -25px;
+            }
+            .altort .y{
+                margin-top: -20px;
+                text-align: center;
+            }
+            }
+            @media screen and (max-width: 420px){
+                .menu li {
+                    margin-left:2%;
+                    margin-right: 2%;
+                }
+                .menso .d{
+                    width: 90%;
+                }
+                }
